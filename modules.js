@@ -10,7 +10,7 @@
  * all code of the module get wrapped inside the function (IIFE)
  *
  * An IIFE (Immediately Invoked Function Expression),
- * is a function is defined and executed immediately after its definition.
+ * function is defined and executed immediately after its definition.
  * This creates a private scope, preventing variables from polluting the global scope and promoting modularity.
  *
  * This way variable & function are private to the module
@@ -19,7 +19,7 @@
  *   ...
  * })( module.exports={} );
  * 
- * module & require is pass by node hence access outside of the module
+ * module & require is pass by node hence it can get access outside of the module
  */
 
 console.log("module log");
@@ -28,6 +28,7 @@ function sum(a, b) {
   return a + b;
 }
 
+// esmodule (mjs | esm) pattern
 // export const m1 = 1;
 const m1 = 1;
 
@@ -36,6 +37,3 @@ console.log(module.exports); // {}
 // commonjs (cjs) pattern
 // module.exports = sum;
 module.exports = { sum, m1 };
-
-// esmodule (mjs | esm) pattern
-// export

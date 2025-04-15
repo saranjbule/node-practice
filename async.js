@@ -58,4 +58,4 @@ const c = multiply(a, b);
 console.log(c);
 
 // synchronous operation
-console.log("second log");
+console.log("last log");

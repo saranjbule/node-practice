@@ -1,20 +1,21 @@
 /**
- * require("./path") : exection steps
- * 
+ * require("./path") : execution steps
+ *
  * step 1: resolving the module
- *       - check for local path "./path", json ".json" or internal module "node:module"
- * 
+ *       - check for local path "./path" or json ".json" or internal module "node:module"
+ *
  * step 2: loading the module
  *       - file content loading
- * 
+ *
  * step 3: compiling
- *       - wrapping content inside IIFE
- * 
+ *       - wrapping content inside IIFE | modularity
+ *
  * step 4: Evaluation
  *       - module.exports checking & execution
- * 
+ *
  * step 5: caching
- *       - node cache the require 
- *       - if same require statement is added in multiple places 
- *       - it takes the single statement perform all 5 steps for 1 statement and for rest it return from cache 
+ *       - cache the require
+ *
+ *       - if same require statement is added in multiple places
+ *       - assume 5, so it takes the 1 statement perform all 5 steps, rest 4 is return from cache
  */
