@@ -3,12 +3,12 @@
 
 console.log("app 1");
 
-// commonjs (cjs) pattern | default | "type" = "commonjs"
-// older way | synchronous | runs in non-strict mode
-const { sum, m1 } = require("./modules"); // module log
+// commonjs (cjs) | default | "type" = "commonjs"
+// old way | synchronous | runs in non-strict mode
+const { sum, m1 } = require("./modules"); // op: module log
 // require work without extension (.js)
 
-// esmodule (esm | mjs) pattern | "type" = "module"
+// esmodule (esm | mjs) | "type" = "module"
 // new way | async | runs in strict mode by default
 // import { sum, m1 } from "./modules.js";
 
