@@ -10,7 +10,7 @@
  * all code of the module get wrapped inside the function (IIFE)
  *
  * An IIFE (Immediately Invoked Function Expression),
- * function is defined and executed immediately after its definition.
+ * executed function immediately after its definition.
  * This creates a private scope, preventing variables from polluting the global scope and promoting modularity.
  *
  * This way variable & function are private to the module
