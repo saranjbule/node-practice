@@ -15,10 +15,10 @@
  *
  * This way variable & function are private to the module
  *
- * (function (module, require, ...) {
+ * (function (module, require, exports, __filename, __dirname, ...) {
  *   ...
  * })( module.exports={} );
- * 
+ *
  * module & require is pass by node hence it can get access outside of the module
  */
 
@@ -37,3 +37,9 @@ console.log(module.exports); // {}
 // commonjs (cjs) pattern
 // module.exports = sum;
 module.exports = { sum, m1 };
+
+console.log(module, "MODULE");
+console.log(exports, "EXPORTS");
+console.log(require, "REQUIRE");
+console.log(__filename, "FILENAME");
+console.log(__dirname, "DIRNAME");
