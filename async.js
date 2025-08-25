@@ -53,7 +53,7 @@ setTimeout(() => console.log("setTimeout log after 0sec"), 0); // it get called 
 // synchronous operation (local execution context is created for greet)
 console.log(greet());
 
-// synchronous operation (local execution context is created for multiply and computed result is sotred into c i.e., stack)
+// synchronous operation (local execution context is created for multiply and computed result is stored into c i.e., stack)
 const c = multiply(a, b);
 console.log(c);
 
