@@ -52,5 +52,5 @@ console.log('main file last log');
  * main file last log
  * setTimeout log
  * setImmediate log
- * fs log | file reading take some time not immediate task
+ * fs log | file reading take some time not an immediate task
  */

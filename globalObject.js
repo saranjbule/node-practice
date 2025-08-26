@@ -6,4 +6,4 @@ console.log(globalThis); // global object
 
 // global is part of node and not V8
 
-// globalThis is a standard way to access global object in Node or web browser
+// globalThis is a standard way to access global object in Node and web browser

@@ -17,5 +17,5 @@
  *       - cache the require
  *
  *       - if same require statement is added in multiple places
- *       - assume 5, so it takes the 1 statement perform all 5 steps, rest 4 is return from cache
+ *       - assume 5, so it takes the first statement perform all 5 steps and rest others are return from cache
  */

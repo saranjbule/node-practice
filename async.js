@@ -31,6 +31,7 @@ const greet = () => {
 // Synchronous function - block main thread (not handle by libuv)
 const key = crypto.pbkdf2Sync("demo-password", "salt", 50000, 50, "sha512");
 console.log("first key generated", key);
+
 // async function - (handle by libuv)
 crypto.pbkdf2("demo-password", "salt", 500000, 50, "sha512", (err, key) => {
   console.log("Second key generated", err, key);
